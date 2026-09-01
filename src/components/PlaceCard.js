@@ -1,5 +1,4 @@
 const categoryIcon = {
-  "beach": "🏖️",
   "museum": "🏛️",
   "art gallery": "🎨",
   "zoo": "🦁",
@@ -14,6 +13,7 @@ const categoryIcon = {
   "restaurant": "🍽️",
   "shopping mall": "🛍️",
   "heritage / historic": "🏰",
+  
 };
 
 export default function PlaceCard({ place }) {
@@ -45,7 +45,7 @@ export default function PlaceCard({ place }) {
 
       {/* Rating + weather score */}
       <div className="mt-3 flex items-center gap-3 flex-wrap">
-        <span className="text-sm text-yellow-400">⭐ {rating}</span>
+        <span className="text-sm text-yellow-400"></span>
         {place.weatherScore !== undefined && (
           <span className="rounded-full bg-green-500/10 border border-green-500/20 px-2.5 py-0.5 text-xs text-green-300">
             {place.weatherScore}% weather match
